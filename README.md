@@ -2,7 +2,7 @@
 aria2 build scripts for `msys2` with custom patches.
 
 ### Build Status
-[![Build status](https://ci.appveyor.com/api/projects/status/fndjci8g5f71gf6l?svg=true)](https://ci.appveyor.com/project/myfreeer/aria2-build-msys2)
+[![Build status](https://ci.appveyor.com/api/projects/status/fndjci8g5f71gf6l?svg=true)](https://ci.appveyor.com/project/fzfile/aria2-build-msys2)
 
 ### License
 [![GitHub license](https://img.shields.io/github/license/myfreeer/aria2-build-msys2.svg)](LICENSE) 
