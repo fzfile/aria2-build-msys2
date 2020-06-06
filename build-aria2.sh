@@ -1,5 +1,4 @@
 #!bash
-sudo apt install libxml2-dev libcppunit-dev autoconf automake autotools-dev autopoint libtool -y
 cd aria2
 git am -3 ../aria2-*.patch
 autoreconf -i
