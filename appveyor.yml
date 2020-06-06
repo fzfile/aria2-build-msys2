@@ -1,4 +1,32 @@
 version: 0.0.{build}
 image: Ubuntu1604
+init:
+- sh: sudo apt install libxml2-dev libcppunit-dev autoconf automake autotools-dev autopoint libtool -y
+install:
+- sh: git submodule update --init --recursive
 build_script:
-- sh: bash build-aria2.sh
+- sh: >-
+    cd aria2
+
+    git am -3 ../aria2-*.patch
+
+    autoreconf -i
+
+    ./configure \
+        --without-included-gettext \
+        --disable-nls \
+        --with-libcares \
+        --without-gnutls \
+        --without-openssl \
+        --with-sqlite3 \
+        --without-libxml2 \
+        --with-libexpat \
+        --with-libz \
+        --with-libgmp \
+        --with-libssh2 \
+        --without-libgcrypt \
+        --without-libnettle \
+        ARIA2_STATIC=yes
+    make
+
+    strip -s src/aria2c
