@@ -1,7 +1,7 @@
 version: 0.0.{build}
 image: Ubuntu1604
 init:
-- sh: sudo apt install libxml2-dev libcppunit-dev autoconf automake autotools-dev autopoint libtool libssh2-1-dev libbssh2-1 -y
+- sh: sudo apt install libxml2-dev libcppunit-dev autoconf automake autotools-dev autopoint libtool libssh2-1-dev libssh2-1 -y
 install:
 - sh: git submodule update --init --recursive
 build_script:
