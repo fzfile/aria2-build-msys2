@@ -23,14 +23,6 @@ aria2 build scripts for `msys2` with custom patches.
 * download: add option `retry-on-403` to retry on http 403 forbidden, which only effective if retry-wait > 0
 * download: add option `retry-on-406` to retry on http 406 not acceptable, which only effective if retry-wait > 0
 
-### Environment 
-[MSYS2](http://www.msys2.org/)
-Should be set up with commands below:
-```sh
-pacman -Syyuu --noconfirm
-pacman -Su --noconfirm
-pacman -S --noconfirm --needed base-devel zlib-devel sqlite git unzip zip tar gmp gmp-devel libssh2 libssh2-devel openssl-devel
-```
 
 ### Artifacts
 * x86_64 (64-bits) version: [![aria2c.7z](https://img.shields.io/badge/download-aria2c.7z-brightgreen.svg)](https://ci.appveyor.com/api/projects/myfreeer/aria2-build-msys2/artifacts/aria2c.7z)
