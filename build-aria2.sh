@@ -162,7 +162,7 @@ autoreconf -fi || autoreconf -fiv
     LDFLAGS="-L$PREFIX/lib -Wl,--gc-sections,--build-id=none" \
     PKG_CONFIG_PATH="$PREFIX/lib/pkgconfig"
 make -j$CPUCOUNT
-strip -s src/aria2c.exe
+strip -s src/aria2c
 git checkout master
 git branch patch -D
 cd ..
