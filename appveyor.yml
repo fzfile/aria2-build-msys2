@@ -1,0 +1,4 @@
+version: 0.0.{build}
+image: Ubuntu1604
+build_script:
+- sh: bash build-aria2.sh
