@@ -1,18 +1,8 @@
 #!bash
 apt install libxml2-dev libcppunit-dev autoconf automake autotools-dev autopoint libtool
-
-if [[ -d aria2 ]]; then
-    cd aria2
-    git checkout master
-    git reset --hard origin || git reset --hard
-    git pull
-else
-    git clone https://github.com/aria2/aria2 --depth=1 --config http.sslVerify=false
-    cd aria2
-fi
-git checkout -b patch
+git clone https://github.com/aria2/aria2 --depth=1 --config http.sslVerify=false
+cd aria2
 git am -3 ../aria2-*.patch
-
 autoreconf -i
 ./configure \
     --without-included-gettext \
@@ -31,6 +21,3 @@ autoreconf -i
     ARIA2_STATIC=yes
 make
 strip -s src/aria2c
-git checkout master
-git branch patch -D
-cd ..
