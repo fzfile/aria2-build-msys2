@@ -8,7 +8,7 @@ build_script:
 - sh: >-
     cd aria2
 
-    git am -3 ../aria2-*.patch
+    git apply ../aria2-*.patch
 
     autoreconf -i
 
