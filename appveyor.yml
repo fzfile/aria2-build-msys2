@@ -19,8 +19,8 @@ install:
 build_script:
 - sh: sudo bash build.sh
 artifacts:
-- path: /home/appveyor/projects/aria2-build-msys2/aria2/src
-  name: aria2c
+- path: aria2-build-msys2/aria2/src/aria2c
+  name: aria2c_linux_mod
 deploy:
 - provider: GitHub
   auth_token:
