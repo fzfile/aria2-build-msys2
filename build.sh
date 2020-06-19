@@ -21,8 +21,7 @@ autoreconf -i
     --with-libgmp \
     --with-libssh2 \
     --without-libgcrypt \
-    --without-libnettle \
-    --with-cppunit-prefix=$PREFIX \
+    --without-libnettle
     ARIA2_STATIC=yes \
 strip -s src/aria2c
 git checkout master
