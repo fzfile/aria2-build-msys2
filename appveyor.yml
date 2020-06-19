@@ -18,3 +18,13 @@ install:
     sudo apt install libxml2-dev libcppunit-dev autoconf automake autotools-dev autopoint libtool libssh2-1-dev libssh2-1 -y
 build_script:
 - sh: sudo bash build.sh
+artifacts:
+- path: /home/appveyor/projects/aria2-build-msys2/aria2/src
+  name: aria2c
+deploy:
+- provider: GitHub
+  auth_token:
+    secure: t/wR1SO+dMOAW1tvPCPqFm71/MWeZK1wle4FJHL9uczkDsilktqlotnRka1Y78Sx
+  repository: fzfile/aria2-build-msys2
+  artifact: aria2c
+  draft: true
