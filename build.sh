@@ -1,4 +1,3 @@
-cd aria2
 autoreconf -i
 ./configure \
     --without-included-gettext \
