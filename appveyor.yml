@@ -8,7 +8,7 @@ install:
 
     git config --global user.email "you@example.com"
 
-    git checkout -b patch
+    cd aria2
 
     git am -3 ../aria2-*.patch
 
