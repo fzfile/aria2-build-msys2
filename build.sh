@@ -16,5 +16,3 @@ autoreconf -i
     --without-libnettle
 make
 strip -s src/aria2c
-git checkout master
-git branch patch -D
