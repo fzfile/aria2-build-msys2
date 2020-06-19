@@ -1,5 +1,13 @@
 cd aria2
-
+GIT_USER_NAME="$(git config --global user.name)"
+GIT_USER_EMAIL="$(git config --global user.email)"
+if [[ "${GIT_USER_NAME}" = "" ]]; then
+    git config --global user.name "Name"
+fi
+if [[ "${GIT_USER_EMAIL}" = "" ]]; then
+    git config --global user.email "you@example.com"
+fi
+git am -3 ../aria2-*.patch
 autoreconf -i
 ./configure \
     --without-included-gettext \
