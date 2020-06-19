@@ -19,7 +19,7 @@ install:
 build_script:
 - sh: sudo bash build.sh
 artifacts:
-- path: aria2-build-msys2/aria2/src/aria2c
+- path: aria2/src/aria2c
   name: aria2c_linux_mod
 deploy:
 - provider: GitHub
