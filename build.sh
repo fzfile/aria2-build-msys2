@@ -1,7 +1,4 @@
-﻿#!bash
 cd aria2
-git checkout -b patch
-git am -3 ../aria2-*.patch
 
 autoreconf -i
 ./configure \
