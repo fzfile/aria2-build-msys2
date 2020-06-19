@@ -12,8 +12,7 @@ autoreconf -i
     --with-libgmp \
     --with-libssh2 \
     --without-libgcrypt \
-    --without-libnettle \
-    ARIA2_STATIC=yes
+    --without-libnettle
 make
 strip -s src/aria2c
 git checkout master
