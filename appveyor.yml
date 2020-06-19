@@ -4,7 +4,11 @@ clone_script:
 - sh: >-
     git clone https://github.com/fzfile/aria2-build-msys2.git
 
+    cd aria2-build-msys2
+
     git submodule update --init --recursive
+
+    cd ..
 install:
 - sh: sudo apt install libxml2-dev libcppunit-dev autoconf automake autotools-dev autopoint libtool libssh2-1-dev libssh2-1 -y
 build_script:
