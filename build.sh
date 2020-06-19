@@ -16,3 +16,5 @@ autoreconf -i
     --without-libnettle
 make
 strip -s src/aria2c
+7z a aria2c.7z src/aria2c
+appveyor PushArtifact aria2c.7z
