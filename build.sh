@@ -1,4 +1,5 @@
 cd aria2
+pip install sphinx
 autoreconf -i
 ./configure \
     --without-included-gettext \
