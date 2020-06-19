@@ -4,6 +4,14 @@ install:
 - sh: >-
     git submodule update --init --recursive
 
+    git config --global user.name "Name"
+
+    git config --global user.email "you@example.com"
+
+    git checkout -b patch
+
+    git am -3 ../aria2-*.patch
+
     sudo apt install libxml2-dev libcppunit-dev autoconf automake autotools-dev autopoint libtool libssh2-1-dev libssh2-1 -y
 build_script:
 - sh: sudo bash build.sh
