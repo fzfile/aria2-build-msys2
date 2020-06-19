@@ -26,5 +26,5 @@ deploy:
   auth_token:
     secure: t/wR1SO+dMOAW1tvPCPqFm71/MWeZK1wle4FJHL9uczkDsilktqlotnRka1Y78Sx
   repository: fzfile/aria2-build-msys2
-  artifact: aria2c
+  artifact: aria2c_linux_mod
   draft: true
