@@ -12,7 +12,7 @@ autoreconf -i
     --with-libgmp \
     --with-libssh2 \
     --without-libgcrypt \
-    --without-libnettle
+    --without-libnettle \
     ARIA2_STATIC=yes
 make
 strip -s src/aria2c
