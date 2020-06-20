@@ -1,3 +1,6 @@
+## 说明
+这个未在原repo上做任何修改，只是编译了linux版的，以下为原repo说明
+
 ## Readme
 aria2 build scripts for `msys2` with custom patches.
 
