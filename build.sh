@@ -2,10 +2,6 @@ cd aria2
 pip install sphinx
 autoreconf -i
 ./configure \
-    --without-included-gettext \
-    --disable-nls \
-    --without-gnutls \
-    --without-openssl \
     --with-sqlite3 \
     --without-libxml2 \
     --with-libexpat \
