@@ -13,8 +13,6 @@ install:
 
     git checkout -b patch
 
-    cd ..
-
     git am aria2-*.patch
 
     sudo apt install libxml2-dev libcppunit-dev autoconf automake autotools-dev autopoint libtool libssh2-1-dev libssh2-1 -y
